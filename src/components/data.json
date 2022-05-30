@@ -1,0 +1,21 @@
+{
+    "data": [
+        {
+            "isbn": 8418008121 ,
+            "image": "https://pictures.abebooks.com/isbn/9788418008122-es.jpg",
+            "title": "Crimen y Castigo",
+            "author":"Fiodor Dostoyevski",
+            "edithorial":"Alma, 2020",
+            "price": 3.99
+        },
+        {
+            "isbn": 8423919005  ,
+            "image": "https://pictures.abebooks.com/isbn/9788423919000-es.jpg",
+            "title": "Cien AÑos de soledad",
+            "author":"Garcia Marquez, Gabriel",
+            "edithorial":"Espasa-Calpe",
+            "price": 49.49
+        }
+    ]
+
+}

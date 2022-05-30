@@ -1,0 +1,149 @@
+{
+    "data": [
+        {
+            "isbn": 8418008121 ,
+            "image": "https://pictures.abebooks.com/isbn/9788418008122-es.jpg",
+            "title": "Crimen y Castigo",
+            "author":"Fiodor Dostoyevski",
+            "edithorial":"Alma, 2020",
+            "price": 3.99
+        },
+        {
+            "isbn": 8423919005  ,
+            "image": "https://pictures.abebooks.com/isbn/9788423919000-es.jpg",
+            "title": "Cien AÑos de soledad",
+            "author":"Garcia Marquez, Gabriel",
+            "edithorial":"Espasa-Calpe",
+            "price": 49.49
+        },
+        {
+            "isbn": 8447306615,
+            "image": "https://pictures.abebooks.com/inventory/md/md31143977540.jpg",
+            "title": "La casa de los espíritus",
+            "author":"Allende, Isabel",
+            "edithorial":"Allende, Isabel",
+            "price": 1.30
+        },
+        {
+            "isbn": 8497931270 ,
+            "image": "https://pictures.abebooks.com/inventory/md/md31203384935.jpg",
+            "title": "PRELUDIO A LA FUNDACION",
+            "author":"ASIMOV, ISAAC",
+            "edithorial":"DEBOLS!LLO, 2004",
+            "price": 11.95
+        },
+        {
+            "isbn": 849632284,
+            "image": "https://pictures.abebooks.com/inventory/md/md30728746378.jpg",
+            "title": "Gutiérrez y las almas muertas",
+            "author":"Gómez Martínez, Marcos",
+            "edithorial":"Ediciones de La Discreta., 2018",
+            "price": 3.52
+        },
+        {
+            "isbn": 8481301256,
+            "image": "https://pictures.abebooks.com/inventory/md/md30988068318.jpg",
+            "title": "Eugénie Grandet la comedia humana",
+            "author":"Balzac, Honoré de",
+            "edithorial":"Unidad Editorial, Madrid, 1999",
+            "price": 1.17
+        },
+        {
+            "isbn":8415618891,
+            "image": "https://pictures.abebooks.com/isbn/9788415618898-es.jpg",
+            "title": "Cumbres Borrascosas (clasicos)",
+            "author":"VVAA",
+            "edithorial":"Editorial Alma, 2019",
+            "price": 15.95
+        },
+        {
+            "isbn":8437501415,
+            "image": "https://pictures.abebooks.com/inventory/md/md31103696766.jpg",
+            "title": "La muerte de Artemio Cruz",
+            "author":"Fuentes, Carlos",
+            "edithorial":"F.C.E. de España., 1962",
+            "price": 2.09
+        },
+        {
+            "isbn":8495839350,
+            "image": "https://pictures.abebooks.com/isbn/9788495839350-es.jpg",
+            "title": "Diario De Rodaje Al Sur De Granad (Fahrenheit 451)",
+            "author":"Colomo, Fernando",
+            "edithorial":"Ocho y Medio, Libros de Cine, S.L., 2003",
+            "price": 8.00
+        },
+        {
+            "isbn":8479690100,
+            "image": "https://pictures.abebooks.com/inventory/31116470391.jpg",
+            "title": "El Buscón",
+            "author":"Quevedo",
+            "edithorial":"Compañía Europea de Comunicación e Información., 1991",
+            "price":0.93 
+        },
+        {
+            "isbn": 8402076807,
+            "image": "https://pictures.abebooks.com/isbn/9788402076809-es.jpg",
+            "title": "En El Camino",
+            "author":"Jack Kerouac",
+            "edithorial":"Bruguera, 1983",
+            "price": 8.49
+        },
+        {
+            "isbn": 8422608960,
+            "image": "https://pictures.abebooks.com/inventory/md/md31203080573.jpg",
+            "title": "EXTRANJERO - EL",
+            "author":"CAMUS, ALBERT",
+            "edithorial":"CIRCULO DE LECTORES, 1982",
+            "price": 4.50
+        },
+        {
+            "isbn": 849074274,
+            "image": "https://pictures.abebooks.com/isbn/9788490742747-es.jpg",
+            "title": "DRÁCULA",
+            "author":"ABRAHAM STROKER,",
+            "edithorial":"Editorial: VERBUM EDITORIAL, España, 2016",
+            "price": 17.72
+        },
+        {
+            "isbn": 8496414671,
+            "image": "https://pictures.abebooks.com/isbn/9788496414679-es.jpg",
+            "title": "1984 (català)",
+            "author":"Orwell, George",
+            "edithorial":"Edicions 62 / El Periódico, Barcelona, 2005",
+            "price": 4.50
+        },
+        {
+            "isbn": 8475300421,
+            "image": "https://pictures.abebooks.com/inventory/md/md31130173038.jpg",
+            "title": "La dama del perrito y otros cuentos",
+            "author":"Chejov, Anton Pavlovich",
+            "edithorial":"Orbis D.L. 1989, [Barcelona], 1989",
+            "price": 1.80
+        },
+        {
+            "isbn": 8432082457,
+            "image": "https://pictures.abebooks.com/inventory/md/md31205822811.jpg",
+            "title": "Trópico de Cáncer",
+            "author":"Miller, Henry",
+            "edithorial":"Planeta., 1985",
+            "price": 1.40
+        },
+        {
+            "isbn": 330447432,
+            "image": "https://pictures.abebooks.com/isbn/9780330447430-es.jpg",
+            "title": "2666",
+            "author":"Bolao, Roberto",
+            "edithorial":"Picador, 2009",
+            "price": 13.51
+        },
+        {
+            "isbn": 8495501074,
+            "image": "https://pictures.abebooks.com/inventory/md/md31198292973.jpg",
+            "title": "Ensayo sobre la ceguera",
+            "author":"Saramago, José",
+            "edithorial":"Punto de Lectura, Madrid, 2005",
+            "price": 85.26
+        }
+    ]
+
+}
