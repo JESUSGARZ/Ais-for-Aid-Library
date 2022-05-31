@@ -8,3 +8,15 @@
 .logout__container img {
     width: 50px;
 }
+
+@media(max-width: 450px) {
+    .logout__container img {
+        width: 30px;
+    }
+    .logout__container button {
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        height: 70px;
+    }  
+}

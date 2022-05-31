@@ -6,7 +6,7 @@ const DeleteButton = (props) => {
     const [[books,setBooks],[cart,setCart]] = useContext(LibraryContext);
     
    const handleDelete = () => {
-       const newArray = cart.filter(e => e.title !== props.title)
+       const newArray = cart.filter(e => e.name !== props.title)
        setCart(newArray)
    }
 

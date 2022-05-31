@@ -10,3 +10,13 @@
 .profile__container h2 {
     margin: auto 0;
 }
+@media(max-width: 450px) {
+    .profile__container img {
+        width: 80px;
+        border-radius: 50%;
+    }
+    .profile__container h2 {
+        font-size: 19px;
+        margin: auto 0;
+    }
+}

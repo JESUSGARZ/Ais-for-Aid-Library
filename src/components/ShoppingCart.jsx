@@ -35,12 +35,9 @@ const ShoppingCart = () => {
    
    const showShopppingCart = () => {
     setOpen(false);
-
    }
    const clearShoppingCart = () => {
        setCart([])
-
-
    }
    if (cart.length !== 0) {
     return (
@@ -52,30 +49,39 @@ const ShoppingCart = () => {
             </div>
               {
               cart?.map(item => {
+                  let numr = 0;
+                  const add = () => {
+                      numr = numr +1
+                  }
                   return (
-                      <div className='shopping__item' key={item.title}>
+                      <div className='shopping__item' key={item.id}>
                           <div className='shopping__item-data'>
-                              <img className='shopping__item-img' src={item.image} alt={item.title}/>
+                              <img className='shopping__item-img' src={item.sprites.other.dream_world.front_default} alt={item.name}/>
                               <div className='shopping__item-title'>
-                                  <h2 >{item.title}</h2>
+                                  <h2 >{item.name}</h2>
+                                    {
+                                        item.types.map( e => {
+                                            return (<p key={e.type.name}>{e.type.name}</p>)
+                                        })
+                                    } 
                                   <p>{item.edithorial}</p>
                               </div>
                               
                           </div>
                           <div className='shopping__item-add'>
-                              <h3>$ {(item.price)}</h3>
+                              <h3>$ {item.stats[0].base_stat}</h3>
                               <div className='shopping__item-button'>
-                                  <button onClick={lessItem}>-</button>
-                                      <p>{count}</p>
+                                  <button onClick={() => add()}>-</button>
+                                      <p>{numr}</p>
                                   <button onClick={addItem}>+</button>  
                               </div>
                           </div>
-                          <DeleteButton title = {item.title}/>  
+                          <DeleteButton title = {item.name}/>  
                       </div>
                   )
                   })
               }  
-              <div>
+              <div className='shopping__button-end'>
                   <Button action ={showShopppingCart} text ={'Volver'}/>
                   <Button  action ={clearShoppingCart} text = {'Vaciar'}/>
               </div>
