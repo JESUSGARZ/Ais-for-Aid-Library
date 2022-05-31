@@ -10,29 +10,29 @@ import ShoppingCart from './components/ShoppingCart';
 import axios from 'axios';
 //import data from './components/data2.json';
 import data from './components/data2.json'
+import NavBar from './components/NavBar';
+import Welcome from './components/Welcome';
+import Loading from './components/Loading';
+
 
 function App() {
   const {isAuthenticated, isLoading} = useAuth0();
-  if (isLoading) return <h1>Loading ...</h1>
+  if (isLoading) return <Loading/>
   return (
-    <LibraryProvider>
-      <div className='App'>
-        <h1>Aplication</h1>
-        {
-          isAuthenticated ? 
-          <div>
-            <LogoutButton/> 
-            <Profile/>
-            <List/>
-            <ShoppingCart/>
-            <ShoppingCart/>
-          </div>
-          : <LoginButton/>
-        }
-        
-      </div>
-
-    </LibraryProvider>
+    
+      <LibraryProvider>
+        <div className='App'>
+          {
+            isAuthenticated ? 
+            <div>
+              <NavBar/>
+              <List/>
+              <ShoppingCart/>
+            </div>
+            : <Welcome/>
+          } 
+        </div>
+      </LibraryProvider> 
   );
 }
 

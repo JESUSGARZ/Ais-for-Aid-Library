@@ -1,0 +1,14 @@
+.delete__Button {
+    width: 150px;
+    height: 70px;
+    border-radius: 8px;
+    background-color:#d6001d;
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    border: 2px solid;
+    padding: 20px;
+    box-shadow: 6px 4px 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

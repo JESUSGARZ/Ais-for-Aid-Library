@@ -1,0 +1,12 @@
+.profile__container {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+.profile__container img {
+    width: 100px;
+    border-radius: 50%;
+}
+.profile__container h2 {
+    margin: auto 0;
+}

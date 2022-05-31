@@ -1,0 +1,10 @@
+.logout__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+
+.logout__container img {
+    width: 50px;
+}
