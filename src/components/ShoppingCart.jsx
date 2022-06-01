@@ -3,23 +3,13 @@ import { LibraryContext } from '../context';
 import DeleteButton from './DeleteButton';
 import '../styles/shoppingCart.css'
 import Button from './Button';
+import AddingProducts from './AddingProducts';
 
 const ShoppingCart = () => {
    const [[books,setBooks],[cart,setCart],[open,setOpen]] = useContext(LibraryContext);
-   let [count, setCount] = useState(0);
+   const [count, setCount] = useState(1);
    
-
-   const addItem = () => {
-       let number = count;
-       number++
-       setCount(number)
-   }
-   const lessItem = () => {
-       let number = count;
-       number--
-       setCount(number)
-   }
-
+   
 
     useEffect(() => {
         let shoppingCart = document.getElementById('shopping__cart');
@@ -49,10 +39,7 @@ const ShoppingCart = () => {
             </div>
               {
               cart?.map(item => {
-                  let numr = 0;
-                  const add = () => {
-                      numr = numr +1
-                  }
+                  const total = document.getElementById(item.id) 
                   return (
                       <div className='shopping__item' key={item.id}>
                           <div className='shopping__item-data'>
@@ -69,18 +56,22 @@ const ShoppingCart = () => {
                               
                           </div>
                           <div className='shopping__item-add'>
-                              <h3>$ {item.stats[0].base_stat}</h3>
+                              <div>
+                                <h3>$ {item.stats[0].base_stat}/und</h3>
+                                <h3>total: $ {(parseInt(item.stats[0].base_stat)) * count}</h3>
+                              </div>
+                             
                               <div className='shopping__item-button'>
-                                  <button onClick={() => add()}>-</button>
-                                      <p>{numr}</p>
-                                  <button onClick={addItem}>+</button>  
+                                <AddingProducts id = {item.id} count ={count} setCount = {setCount}/>
                               </div>
                           </div>
-                          <DeleteButton title = {item.name}/>  
+                          <DeleteButton name = {item.name}/>  
                       </div>
                   )
                   })
               }  
+
+
               <div className='shopping__button-end'>
                   <Button action ={showShopppingCart} text ={'Volver'}/>
                   <Button  action ={clearShoppingCart} text = {'Vaciar'}/>

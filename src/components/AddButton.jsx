@@ -3,8 +3,8 @@ import { LibraryContext } from '../context';
 import Button from './Button';
 
 const AddButton = (props) => {
-    const [[books, setBooks],[cart, setCart]]=  useContext(LibraryContext);
-    const [open, setOpen] = useState(true)
+    const [[books, setBooks],[cart, setCart],[open, setOpen]]=  useContext(LibraryContext);
+    const [show, setShow] = useState(true)
  
 
     const addToShoppingCart = () => {
@@ -12,16 +12,23 @@ const AddButton = (props) => {
            if(book.name === props.name) {
                if (!cart.includes(book)) {
                 setCart(prev => [...prev,book])     
-                setOpen(false)
-               } else {
-                 setOpen(true)
+                setShow(false)
                }
             }     
          })  
     }
+
+    useEffect(() => {
+      const result = cart.includes((cart.filter(e => e.name === props.name))[0])
+      if (!result) {
+        setShow(true) 
+      } 
+    }, [open])
     
     
-    if (open === true) {
+    
+    
+    if (show === true || open === true) {
       return (
         <div>
           <Button action={addToShoppingCart} text = 'Agergar al carrito' />

@@ -20,3 +20,14 @@
         margin: auto 0;
     }
 }
+@media(min-width: 455px) and (max-width: 864px) {
+    .profile__container img {
+        width: 80px;
+        border-radius: 50%;
+    }
+    .profile__container h2 {
+        text-align: center;
+        font-size: 18px;
+        margin: auto 0;
+    }
+}

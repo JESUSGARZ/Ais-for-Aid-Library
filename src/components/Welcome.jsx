@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/welcome.css'
 import LoginButton from './LoginButton';
 
+
 const Welcome = () => {
   return (
     <div className='welcome__container'>

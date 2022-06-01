@@ -8,6 +8,7 @@ import { BrowserRouter, Route,Routes } from "react-router-dom";
 import ShoppingCart from './components/ShoppingCart';
 import Profile from './components/Profile';
 import NavBar from './components/NavBar';
+import Welcome from './components/Welcome';
 
 
 
